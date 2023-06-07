@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+  <base href="/webapp/webjars/github-com-almasaeed2010-AdminLTE/v2.4.0-alpha/"/>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <title>AdminLTE 2 | Blank Page</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport"/>  
+  <ui:include src="fragments/css.xhtml" />
+</h:head>
+
+<h:body class="hold-transition skin-blue sidebar-mini">
+	<!-- Site wrapper -->
+	<div class="wrapper">
+	  
+	  <ui:include src="fragments/header.xhtml" />
+	  <!-- =============================================== -->
+	  <ui:include src="fragments/menu.xhtml" />
+	  <!-- =============================================== -->
+	  <!-- Content Wrapper. Contains page content -->
+	  <h:form id="mainForm" >
+		  <ui:insert name="content"/>
+	  </h:form>
+	  <!-- /.content-wrapper -->
+	  <!-- =============================================== -->
+	  <ui:include src="fragments/footer.xhtml" />
+	  <!-- =============================================== -->
+	  <ui:include src="fragments/sidebar.xhtml" />
+	  
+	</div>
+	<!-- ./wrapper -->
+	<ui:include src="fragments/js.xhtml" />
+</h:body>
+</html>
